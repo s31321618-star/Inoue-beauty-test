@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="岐阜県関市の井上美容室。あなたらしいヘアスタイルをご提案します。">
+  <title>井上美容室 | 岐阜県関市</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home">井上美容室
+      <span>INOUE BEAUTY SALON</span>
+    </a>
+    <button class="menu-toggle" aria-label="メニューを開く">☰</button>
+    <nav class="nav">
+      <a href="#concept">コンセプト</a>
+      <a href="#menu">メニュー</a>
+      <a href="#access">店舗情報</a>
+      <a class="nav-button" href="#reserve">ご予約</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR BEAUTIFUL EVERYDAY</p>
+        <h1>あなたらしさを、<br>髪から一緒に。</h1>
+        <p>いつもの毎日に、少しの心地よさを。<br>
+        一人ひとりに寄り添う、関市の美容室です。</p>
+        <a class="button" href="#reserve">ご予約はこちら →</a>
+      </div>
+    </section>
+
+    <section class="section concept" id="concept">
+      <div>
+        <p class="eyebrow">CONCEPT</p>
+        <h2>ずっと通いたくなる、<br>やさしい美容室。</h2>
+        <p>髪を整えることは、気持ちを整えること。</p>
+        <p>髪質やライフスタイルに合わせて、
+        毎日のお手入れがしやすいスタイルを一緒に見つけます。</p>
+      </div>
+      <img
+        src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=80"
+        alt="落ち着いた雰囲気の美容室">
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <p class="eyebrow">MENU</p>
+      <h2>メニュー</h2>
+      <p>お客様のご希望に合わせてご提案します。</p>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1560868348-4e0d6c8a1a9b?auto=format&fit=crop&w=700&q=80" alt="カットスタイル">
+          <h3>カット</h3>
+          <p>シャンプー・ブロー込み</p>
+          <strong>¥4,400〜</strong>
+        </article>
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80" alt="カラースタイル">
+          <h3>カラー</h3>
+          <p>髪色のご相談もお気軽に</p>
+          <strong>¥6,600〜</strong>
+        </article>
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=700&q=80" alt="パーマスタイル">
+          <h3>パーマ</h3>
+          <p>自然な動きのあるスタイルに</p>
+          <strong>¥8,800〜</strong>
+        </article>
+      </div>
+      <p class="note">※料金はすべて試作用の仮設定です。</p>
+    </section>
+
+    <section class="section access" id="access">
+      <p class="eyebrow">INFORMATION</p>
+      <h2>店舗情報</h2>
+      <dl>
+        <div><dt>住所</dt><dd>岐阜県関市○○○番地○</dd></div>
+        <div><dt>営業時間</dt><dd>9:00〜18:00（仮）</dd></div>
+        <div><dt>定休日</dt><dd>毎週月曜日（仮）</dd></div>
+        <div><dt>電話番号</dt><dd>0575-23-4567（仮）</dd></div>
+      </dl>
+      <p class="note">※住所・電話番号・営業時間はサンプルです。</p>
+    </section>
+
+    <section class="section reservation" id="reserve">
+      <p class="eyebrow">RESERVATION</p>
+      <h2>ご予約・お問い合わせ</h2>
+      <p>お電話または下記フォームからご連絡ください。</p>
+      <a class="button" href="tel:0575234567">電話で予約する</a>
+
+      <form id="booking-form">
+        <label>お名前
+          <input type="text" name="name" required placeholder="お名前を入力">
+        </label>
+        <label>希望メニュー
+          <select name="menu" required>
+            <option value="">選択してください</option>
+            <option>カット</option>
+            <option>カラー</option>
+            <option>パーマ</option>
+            <option>相談して決めたい</option>
+          </select>
+        </label>
+        <label>希望日
+          <input type="date" name="date" required>
+        </label>
+        <button class="button" type="submit">予約を試してみる →</button>
+        <p id="form-message" aria-live="polite"></p>
+      </form>
+      <p class="note">※デモ用フォームです。実際の予約は送信されません。</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#home">井上美容室
+      <span>INOUE BEAUTY SALON</span>
+    </a>
+    <p>岐阜県関市○○○番地○</p>
+    <small>© 2026 井上美容室 DEMO SITE</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
